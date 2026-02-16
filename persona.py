@@ -7,7 +7,9 @@ class Persona:
         self.coche = coche
 
 
-        def __str__(self):
-            cad = f'Persona {self.nombre} ({self.apellido} -dni: {self.dni})'
+    def __str__(self):
+        cad = f'Persona {self.nombre} ({self.apellido} -dni: {self.dni})'
+        if self.coche:
+            cad += f', Su coche: {self.coche.matricula} ({self.coche.marca})'
 
-            return cad
+        return cad
