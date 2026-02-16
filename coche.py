@@ -19,13 +19,4 @@ class Coche:
             return (f'coche(matricula-{self.matricula!r}, marca-{self.marca!r},')
 
 
-    coches = {}
-    coches['Marca'] = marca
-    coches['Kilometros'] = kilometros_recorridos
-
-    for marca in coches:
-        if marca == coches['Marca']:
-            coches['kilometros'] += kilometros_recorridos
-
-
 
