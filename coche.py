@@ -15,8 +15,7 @@ class Coche:
         return (f'Coche: {self.matricula} ({self.marca}) - km : {self.kilometros_recorridos} km')
 
     def __repr__(self):
-            return (f'coche(matricula-{self.matricula!r}, marca-{self.marca!r},'
-                    f'kilometros-{self.kilometros_recorridos!r}, gasolina-{self.gasolina!r}')
+            return (f'coche(matricula-{self.matricula!r}, marca-{self.marca!r},')
 
 
 
