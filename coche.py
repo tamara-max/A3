@@ -33,7 +33,7 @@ class Coche:
 
     @classmethod
     def km_recorridos_coche_por_marca(cls, marca):
-        return cls(type(self).km_por_marca[marca])
+        return cls.km_por_marca[marca]
 
 
 
