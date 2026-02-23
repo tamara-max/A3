@@ -15,7 +15,7 @@ if __name__ == '__main__':
     print(persona2)
     print(coche1)
     print(coche2)
-    Persona.vender_coche(persona1, persona2)
+    persona1.vender_coche(persona2)
     print(persona1)
     print(persona2)
 
