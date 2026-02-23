@@ -9,7 +9,7 @@ class Coche:
 
 
         if marca not in Coche.km_por_marca:
-            Coche.km_por_marca[marca] = 0
+            type(self).km_por_marca[marca] = 0
 
 
     def __str__(self):
@@ -21,7 +21,7 @@ class Coche:
     def avanzar(self, km):
         if self.gasolina > 0:
             self.kilometros_recorridos += km
-            km_por_marca += Coche.km_por_marca[self.marca]
+            type(self).km_por_marca += type(self).km_por_marca[self.marca]
             self.gasolina -= 0.05 * km
 
         else:
@@ -33,8 +33,8 @@ class Coche:
 
     @classmethod
     def km_recorridos_coche_por_marca(cls, marca):
-        return Coche.km_por_marca[marca]
-    #
+        return cls(type(self).km_por_marca[marca])
+
 
 
 
