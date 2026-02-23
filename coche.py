@@ -19,10 +19,11 @@ class Coche:
             return (f'coche(matricula-{self.matricula!r}, marca-{self.marca!r},')
 
     def avanzar(self, km):
-        if self.gasolina > 0:
+        total = 0.05 * km
+        if self.gasolina >= total:
             self.kilometros_recorridos += km
             type(self).km_por_marca += type(self).km_por_marca[self.marca]
-            self.gasolina -= 0.05 * km
+            self.gasolina -= total
 
         else:
             print('No queda suficiente gasolina')
