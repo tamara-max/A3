@@ -20,7 +20,10 @@ if __name__ == '__main__':
     print(persona2)
     coche1.avanzar(20)
     coche1.repostar(1)
-    coche1.avanzar(30)
+    coche1.avanzar(20)
+
+    print(coche1.km_recorridos_coche_por_marca('BMW'))
+
 
 
 

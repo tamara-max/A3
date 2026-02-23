@@ -22,19 +22,22 @@ class Coche:
         total = 0.05 * km
         if self.gasolina >= total:
             self.kilometros_recorridos += km
-            type(self).km_por_marca += type(self).km_por_marca[self.marca]
+            type(self).km_por_marca[self.marca] += km
             self.gasolina -= total
+            print(f'Has avanzado: {km} km')
 
         else:
             print('No queda suficiente gasolina')
 
     def repostar(self, litros):
         self.gasolina += litros
+        print(f'Gasolina repostada: {litros} L')
 
 
     @classmethod
     def km_recorridos_coche_por_marca(cls, marca):
-        return cls.km_por_marca[marca]
+        recorridos = cls.km_por_marca[marca]
+        return f'La marca: {marca} ha recorrido {recorridos} km '
 
 
 
