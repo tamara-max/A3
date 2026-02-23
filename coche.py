@@ -18,5 +18,24 @@ class Coche:
     def __repr__(self):
             return (f'coche(matricula-{self.matricula!r}, marca-{self.marca!r},')
 
+    def avanzar(self, km):
+        if self.gasolina > 0:
+            self.kilometros_recorridos += km
+            km_por_marca += Coche.km_por_marca[self.marca]
+            self.gasolina -= 0.05 * km
+
+        else:
+            print('No queda suficiente gasolina')
+
+    def repostar(self, litros):
+        self.gasolina += litros
+
+
+    @classmethod
+    def km_recorridos_coche_por_marca(cls, marca):
+        return Coche.km_por_marca[marca]
+
+
+
 
 
