@@ -18,6 +18,9 @@ if __name__ == '__main__':
     persona1.vender_coche(persona2)
     print(persona1)
     print(persona2)
+    coche1.avanzar(20)
+    coche1.repostar(1)
+    coche1.avanzar(30)
 
 
 
