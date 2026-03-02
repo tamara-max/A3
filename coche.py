@@ -25,6 +25,7 @@ class Coche:
             type(self).km_por_marca[self.marca] += km
             self.gasolina -= total
             print(f'Has avanzado: {km} km')
+            return km
 
         else:
             print('No queda suficiente gasolina')
