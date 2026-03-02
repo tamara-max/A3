@@ -24,6 +24,9 @@ if __name__ == '__main__':
 
     print(coche1.km_recorridos_coche_por_marca('BMW'))
 
+    coche3 = CocheElectrico('189 LAP', 'Mazda', 30)
+    coche3.avanzar(20)
+    coche3.recargar(10)
 
 
 

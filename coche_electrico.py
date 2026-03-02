@@ -1,6 +1,7 @@
 # coche_electrico.py
 from coche import Coche
-class CocheCombustion(Coche):
+
+class CocheElectrico(Coche):
     def __init__(self, matricula, marca, carga):
         super().__init__(matricula, marca)
         self.carga = carga
@@ -14,7 +15,7 @@ class CocheCombustion(Coche):
 
 
 
-    def recargar(self,cantidad):
+    def recargar(self, cantidad):
         print(f'Tienes {self.carga}%')
         self.carga += cantidad
         print(f'Has recargado: {cantidad}%, carga actualizada: {self.carga}%')
