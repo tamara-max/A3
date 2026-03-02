@@ -33,9 +33,8 @@ if __name__ == '__main__':
 
     coche4 = CocheCombustion('4789 APO', 'PORSCHE')
     coche4.avanzar(20)
-    coche3.repostar(40)
-    coche4.avanzar(5)
-
+    coche4.repostar_combustion(30)
+    coche4.avanzar_combustion(601)
 
 
 
