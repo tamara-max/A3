@@ -1,5 +1,7 @@
 # Creación de dos coches y dos personas
 from coche import Coche
+from coche_combustion import CocheCombustion
+from coche_electrico import CocheElectrico
 from persona import Persona
 
 if __name__ == '__main__':
@@ -24,9 +26,18 @@ if __name__ == '__main__':
 
     print(coche1.km_recorridos_coche_por_marca('BMW'))
 
-    coche3 = CocheElectrico('189 LAP', 'Mazda', 30)
-    coche3.avanzar(20)
-    coche3.recargar(10)
+    coche3 = CocheElectrico('1189 LOP', 'MERCEDES')
+    coche3.recargar(20,10)
+    coche3.recargar(30, 10)
+
+
+    coche4 = CocheCombustion('4789 APO', 'PORSCHE')
+    coche4.avanzar(20)
+    coche3.repostar(40)
+    coche4.avanzar(5)
+
+
+
 
 
 
