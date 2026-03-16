@@ -1,7 +1,7 @@
 #concesionario.py
 
 class Concesionario:
-    def __init__(self, nombre, lista_coches, lista_personas):
+    def __init__(self, nombre, lista_coches = list, lista_personas = list):
         self.nombre = nombre
         self.lista_coches = lista_coches
         self.lista_personas = lista_personas

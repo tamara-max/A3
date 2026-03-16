@@ -1,3 +1,4 @@
+import concesionario
 from coche import Coche
 from coche_combustion import CocheCombustion
 from coche_electrico import CocheElectrico
@@ -94,3 +95,31 @@ if __name__ == '__main__':
     coche5.repostar(10)
 
     coche5.avanzar(50)
+
+    print('\n--- PRUEBA CONCESIONARIO ---')
+    concesionario1 = Concesionario('Cochfast',[coche4, coche5])
+
+    print('\nCantidad de coches en el concesionario1')
+    print(len(concesionario1))
+
+    print('\nPrimer coche del concesionario')
+    print(concesionario1[0])
+
+    print('\nSegundo coche del concesionario')
+    print(concesionario1[1])
+
+    print('\n¿Hay coches?')
+
+    if concesionario1:
+        print('El concesionario tiene coches')
+    else:
+        print('El concesionario está vacío')
+
+    concesionario2 = Concesionario('Cochius')
+    print('\n¿Hay coches en concesionario2?')
+
+    if concesionario2.len(concesionario1) > 0:
+        print('El concesionario tiene coches')
+    else:
+        print('El concesionario está vacío')
+
