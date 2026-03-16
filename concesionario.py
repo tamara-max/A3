@@ -12,3 +12,10 @@ class Concesionario:
     def __repr__(self):
         return f'Concesionario(nombre={self.nombre}, coches={self.lista_coches})'
 
+    def __bool__(self):
+        return bool(self.lista_coches)
+
+    def __len__(self):
+        return len(self.lista_coches)
+
+    def
