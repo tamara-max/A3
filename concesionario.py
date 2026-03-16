@@ -18,4 +18,6 @@ class Concesionario:
     def __len__(self):
         return len(self.lista_coches)
 
-    def
+    def __getitem__(self, item):
+        return self.lista_coches[item]
+
