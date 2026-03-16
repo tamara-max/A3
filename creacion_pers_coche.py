@@ -118,7 +118,7 @@ if __name__ == '__main__':
     concesionario2 = Concesionario('Cochius')
     print('\n¿Hay coches en concesionario2?')
 
-    if concesionario2.len(concesionario1) > 0:
+    if concesionario2:
         print('El concesionario tiene coches')
     else:
         print('El concesionario está vacío')
