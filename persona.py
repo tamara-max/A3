@@ -14,6 +14,9 @@ class Persona:
 
         return cad
 
+    def __repr__(self):
+        return f'Persona(nombre={self.nombre}, apellido={self.apellido} coche={self.coche})'
+
     def vender_coche(self, a_persona):
         #Comprobar que el vendedor tiene coche
         if self.coche == None:
