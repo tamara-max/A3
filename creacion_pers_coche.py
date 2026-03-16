@@ -3,6 +3,7 @@ from coche_combustion import CocheCombustion
 from coche_electrico import CocheElectrico
 from coche_hibrido import CocheHibrido
 from persona import Persona
+from concesionario import Concesionario
 
 
 if __name__ == '__main__':
